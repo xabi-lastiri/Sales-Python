@@ -5,7 +5,6 @@ as part of my learning journey in Python and SQL.
 
 ![preview.png](docs/preview.png)
 
----
 ## Modules
 
 1. [Database connection](src/modules/module_db_connection.py)
@@ -36,14 +35,12 @@ as part of my learning journey in Python and SQL.
    - Delete a user
    - Change a user's password
 
----
 ## Project structure
 
 The modules use common functions stored and organized in 
 the [functions](src/functions) package, and SQL queries 
 located in [queries](src/queries).
 
----
 ## Database
 
 The database runs on MySQL 8.0.
@@ -62,7 +59,6 @@ The database runs on MySQL 8.0.
 
 ![db_sales.png](docs/db_sales.png)
 
----
 ## How to try the program
 
 1. Follow the instructions in [db_creation.sql](docs/db_creation.sql) 
