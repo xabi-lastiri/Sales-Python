@@ -57,13 +57,17 @@ def select_product_designation():
 def select_product_price():
     while True:
         product_price = input("Product price: ")
-        return product_price if check_price_format(product_price) else False
+        if check_price_format(product_price):
+            return product_price
 
 
 def select_product_quantity():
     while True:
         product_quantity = input("Product quantity: ")
-        return product_quantity if check_int_format(product_quantity) else print(error_invalid_format)
+        if not check_int_format(product_quantity):
+            print(error_invalid_format)
+        else:
+            return product_quantity
 
 
 def select_sale_quantity(product_id):
